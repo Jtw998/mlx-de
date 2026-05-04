@@ -94,15 +94,15 @@ print(y0.grad)   # dL/dy₀ ≈ e
 
 ## Solvers
 
-| Method | Type | Order | Adaptive step | Use case |
-|--------|------|:----:|:------------:|----------|
-| `dopri5` | Dormand-Prince 5(4) | 5 | ✅ | Default; general purpose |
-| `tsit5` | Tsitouras 5(4) | 5 | ✅ | Slightly faster than dopri5 on some problems |
-| `euler` | Forward Euler | 1 | ❌ | Quick prototyping |
-| `midpoint` | Explicit midpoint | 2 | ❌ | Low-accuracy fast solve |
-| `heun2` | Heun's method | 2 | ❌ | Low-accuracy fast solve |
-| `heun3` | Heun's 3rd order | 3 | ❌ | Medium-accuracy fixed step |
-| `rk4` | Classic RK4 | 4 | ❌ | High-accuracy fixed step |
+| Method | Type | Order | Adaptive | Use case |
+|--------|------|:----:|:--------:|----------|
+| `dopri5` | Dormand-Prince 5(4) | 5 | ✓ | Default; general purpose |
+| `tsit5` | Tsitouras 5(4) | 5 | ✓ | Slightly faster than dopri5 on some problems |
+| `euler` | Forward Euler | 1 | — | Quick prototyping |
+| `midpoint` | Explicit midpoint | 2 | — | Low-accuracy fast solve |
+| `heun2` | Heun's method | 2 | — | Low-accuracy fast solve |
+| `heun3` | Heun's 3rd order | 3 | — | Medium-accuracy fixed step |
+| `rk4` | Classic RK4 | 4 | — | High-accuracy fixed step |
 
 ## API reference
 
